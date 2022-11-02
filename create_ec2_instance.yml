@@ -1,7 +1,7 @@
 ---
 - name: Provisioning AWS instance Using Ansible
   hosts: localhost
-  connectionL local
+  connection: local
   gather_facts: true
 
   vars_files:
