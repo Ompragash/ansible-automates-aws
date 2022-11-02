@@ -1,0 +1,8 @@
+ec2_keypair: "ompragash"
+ec2_security_group: "sg-0fd509554149c3a78"
+ec2_instance_type: "t2.micro"
+ec2_image: "ami-04b4f520c8f401170"
+ec2_subnet_ids: ['subnet-027dedfcfdde63c29']
+ec2_region: "ap-southeast-2"
+ec2_tag_Name: "ansible-automated"
+ec2_volume_size: 10
