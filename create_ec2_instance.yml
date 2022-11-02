@@ -5,7 +5,7 @@
   gather_facts: true
 
   vars_files:
-    - vars/aws-cred.yml
+    - vars/main.yml
   
   tasks:
   
