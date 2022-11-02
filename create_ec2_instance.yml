@@ -1,11 +1,16 @@
 ---
 - name: Provisioning AWS instance Using Ansible
   hosts: localhost
+  connectionL local
+  gather_facts: true
+
   vars_files:
     - vars/aws-cred.yml
+  
   tasks:
-#here we use ansible ec2 module to launch an aws instance
-  - ec2:
+  
+  - name: Use Ansible amazon.aws.ec2 module to launch an aws instance
+    amazon.aws.ec2:
       key_name: "{{ ec2_keypair }}"
       group_id: "{{ ec2_security_group }}"
       instance_type: "{{ ec2_instance_type }}"
