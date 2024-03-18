@@ -1,0 +1,14 @@
+inputSet:
+  name: Build_ansible_automates_aws_1710763328006-push-trigger-input-set
+  identifier: Build_ansible_automates_aws_1710763328006pushtriggerinputset
+  orgIdentifier: Ansibler
+  projectIdentifier: Automate
+  pipeline:
+    identifier: Build_ansible_automates_aws_1710763328006
+    properties:
+      ci:
+        codebase:
+          build:
+            type: branch
+            spec:
+              branch: <+trigger.branch>
