@@ -1,0 +1,33 @@
+pipeline:
+  identifier: Build_ansible_automates_aws_1710763328006
+  name: Build ansible-automates-aws
+  orgIdentifier: Ansibler
+  projectIdentifier: Automate
+  properties:
+    ci:
+      codebase:
+        build: <+input>
+        connectorRef: opgitcon
+        repoName: ansible-automates-aws
+  stages:
+    - stage:
+        identifier: build
+        name: build
+        spec:
+          cloneCodebase: true
+          execution:
+            steps:
+              - step:
+                  identifier: echo
+                  name: echo
+                  spec:
+                    command: echo hello world
+                  timeout: ""
+                  type: Run
+          platform:
+            arch: Amd64
+            os: Linux
+          runtime:
+            spec: {}
+            type: Cloud
+        type: CI
