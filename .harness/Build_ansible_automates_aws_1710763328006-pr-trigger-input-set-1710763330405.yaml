@@ -1,0 +1,14 @@
+inputSet:
+  name: Build_ansible_automates_aws_1710763328006-pr-trigger-input-set
+  identifier: Build_ansible_automates_aws_1710763328006prtriggerinputset
+  orgIdentifier: Ansibler
+  projectIdentifier: Automate
+  pipeline:
+    identifier: Build_ansible_automates_aws_1710763328006
+    properties:
+      ci:
+        codebase:
+          build:
+            type: PR
+            spec:
+              number: <+trigger.prNumber>
